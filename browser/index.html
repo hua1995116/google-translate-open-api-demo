@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>translate</title>
+</head>
+<body>
+<script>
+const result = await translate([`I'm fine. And you?`,`I'm ok.`], {
+  tld: "cn",
+  to: "zh-CN",
+  browers: true
+});
+const data = result.data[0];
+console.log(data);
+</script>
+</body>
+</html>
